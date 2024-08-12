@@ -1,0 +1,24 @@
+// SETUP
+// @import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+// PAGESsetIsFirstTimeFilter
+@import 'pagess/home-page.scss';
+@import 'pagess/book-index.scss';
+
+// COMPONENTs
+@import 'components/main-header';
+@import 'components/login-signup.scss';
+@import 'components/footer.scss';
+@import 'components/filter-by-search..scss';
+@import 'components/book-list.scss';
+@import 'components/preview-book.scss';
+// @import 'components/cards';
+// @import 'components/sidebar';

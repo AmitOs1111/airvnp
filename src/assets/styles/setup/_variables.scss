@@ -1,0 +1,27 @@
+// COLOR PALETTE
+$clr1: #fff;
+$clr2: #000;
+$clr3: #f5f6f8;
+$clr4: darken($clr3, 30%);
+$clr5: #dedede;
+$clr6: #027719;
+$clr7: darken($clr5, 30%);
+$clr8: #ff971d;
+
+// LAYOUT
+$layoutPadding: 20px;
+
+// LAYOUT BREAKPOINTS
+$break-mobile: 600px;
+$break-tablet-narrow: 600px;
+$break-tablet-wide: 900px;
+$break-narrow: 1200px;
+$break-normal: 1360px;
+$break-wide: 1920px;
+
+$padded-break-mobile: $break-mobile + $layoutPadding * 2;
+$padded-break-tablet-narrow: $break-tablet-narrow + $layoutPadding * 2;
+$padded-break-tablet-wide: $break-tablet-wide + $layoutPadding * 2;
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

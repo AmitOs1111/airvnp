@@ -1,0 +1,100 @@
+//------MD QUERY---------
+
+@include for-mobile-layout {
+  .main-header {
+    .header-logo-hamburger-cart {
+      .app-logo {
+        font-size: 2rem;
+      }
+      .hamburger-menu {
+        font-size: 2rem;
+        margin: 20px;
+        display: block;
+      }
+      .header-cart {
+        font-size: 2rem;
+        margin: 20px;
+        display: block;
+      }
+    }
+
+    .main-header-nav {
+      display: none;
+    }
+
+    .header-login {
+      .main-login-header {
+        display: none;
+      }
+      .icon-login {
+        display: block;
+        font-size: 3rem;
+        // position: absolute;
+        color: black;
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+@include for-tablet-narrow-layout {
+  .main-header {
+    .header-logo-hamburger-cart {
+      .app-logo {
+        font-size: 3rem;
+      }
+      .hamburger-menu {
+        display: none;
+      }
+      .header-cart {
+        display: none;
+      }
+    }
+
+    .header-login {
+      .main-login-header {
+        display: block;
+      }
+      .icon-login {
+        display: none;
+      }
+    }
+
+    .main-header-nav {
+      display: block;
+    }
+  }
+}
+
+@include for-tablet-wide-layout {
+  .main-header {
+    .btn {
+      padding: 20px 40px;
+      margin: 3px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@include for-narrow-layout {
+  .main-header {
+    .btn {
+      padding: 20px 60px;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+@include for-normal-layout {
+  .main-header {
+    z-index: 20;
+    position: sticky;
+    top: 0;
+    .btn {
+      padding: 30px 80px;
+      margin-inline-start: 5px;
+      border: 1px solid darken($clr8, 8%);
+      font-size: 1.6rem;
+    }
+  }
+}
