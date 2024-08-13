@@ -1,0 +1,31 @@
+.filter-carousel {
+  margin-block: 30px;
+  font-family: Nunito-ExtraLight;
+  color: $clr10;
+  .carousel {
+    width: 90vw;
+    padding: 10px;
+    .icon-carousel {
+      display: flex;
+      flex-direction: column;
+      width: 56px;
+      margin: 10px;
+      img {
+        margin: auto;
+        width: 40px;
+        height: 40px;
+      }
+      h3 {
+      }
+    }
+  }
+
+  .slick-prev:before,
+  .slick-next:before {
+    background: none;
+    // border: 1px solid black;
+    color: rgb(184, 183, 183);
+    // border-radius: 50%;
+    font-size: 50px;
+  }
+}

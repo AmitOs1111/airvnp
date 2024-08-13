@@ -1,0 +1,15 @@
+.filter-carousel {
+  background-color: aquamarine;
+  margin-block: 100px;
+  .slick-list {
+    width: 600px;
+    height: 100px;
+    background-color: bisque;
+    padding: 10px;
+    margin: 10px;
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
