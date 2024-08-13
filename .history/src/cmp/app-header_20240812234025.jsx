@@ -21,11 +21,11 @@ export function AppHeader() {
         <div className="container-user-header flex">
           <button>Airbnb your home</button>
           <button>
-            <i className="fa-solid fa-globe"></i>
+            <i className="fa-thin fa-globe"></i>
           </button>
           <button className="flex">
             <div>
-              <i className="fa-solid fa-bars"></i>
+              <i className="fa-solid fa-globe"></i>
             </div>
             <div>
               <i className="fa-solid fa-user"></i>
@@ -33,14 +33,13 @@ export function AppHeader() {
           </button>
         </div>
       </div>
-
       <div className="main-header-large-search flex justify-center">
         <div className="main-header-large-search-content flex">
           <div className="where-search">
             <h3>where</h3>
             <h4>search destinations</h4>
           </div>
-          <div className="check-in-out-search flex">
+          <div className="check-in-out-search">
             <div className="check-in">
               <h3>check in</h3>
               <h4>add dates</h4>

@@ -27,7 +27,7 @@ export default function App() {
               key={route.path}
               exact={true}
               element={route.component}
-              path={route.path}
+              to={route.path}
             />
           ))}
           {/* <Route exact={true} element={<UserDetails />} path="/user/:id" /> */}

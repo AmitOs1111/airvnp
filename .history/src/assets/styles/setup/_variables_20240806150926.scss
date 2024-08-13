@@ -1,14 +1,12 @@
 // COLOR PALETTE
 $clr1: #fff;
-$clr2: #222222; //first color text
-$clr3: #ff385c; //logo
-$clr4: #f8385d; //search
-// $clr4: darken($clr3, 30%);
-$clr5: #eeeeee; //gray border
-$clr6: #6b6b6b; // second color text
+$clr2: #000;
+$clr3: #f5f6f8;
+$clr4: darken($clr3, 30%);
+$clr5: #dedede;
+$clr6: #027719;
 $clr7: darken($clr5, 30%);
-$clr8: #5d5d5d; // color filter icons
-$clr9: #f7f7f7; // bg footer
+$clr8: #ff971d;
 
 // LAYOUT
 $layoutPadding: 20px;

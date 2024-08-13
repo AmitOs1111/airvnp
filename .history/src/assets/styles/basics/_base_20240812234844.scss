@@ -3,19 +3,18 @@
 }
 
 html {
-  font-family: Nunito-Regular;
-  color: $clr2;
+  font-family: Bahnschrift, sans-serif;
+  color: $clr1;
   line-height: 1.8;
   line-height: lh(26px);
 
-  @media (max-width: 640px) {
+  @media (max-width: 1300px) {
     font-size: 13px;
   }
 }
 
 body {
   margin: 0;
-  padding: 03;
   background-color: $clr1;
 
   @include for-normal-layout {

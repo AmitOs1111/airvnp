@@ -14,7 +14,6 @@ import { UserMsg } from './cmp/user-msg'
 // import { LoginSignUp } from './pages/login-signup.jsx'
 
 import { useSelector } from 'react-redux'
-import routes from './routes.js'
 
 export default function App() {
   return (
@@ -30,7 +29,7 @@ export default function App() {
               path={route.path}
             />
           ))}
-          {/* <Route exact={true} element={<UserDetails />} path="/user/:id" /> */}
+          <Route exact={true} element={<UserDetails />} path="/user/:id" />
         </Routes>
       </main>
       <AppFooter />

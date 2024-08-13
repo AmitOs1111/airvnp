@@ -30,7 +30,7 @@ export default function App() {
               path={route.path}
             />
           ))}
-          {/* <Route exact={true} element={<UserDetails />} path="/user/:id" /> */}
+          <Route exact={true} element={<UserDetails />} path="/user/:id" />
         </Routes>
       </main>
       <AppFooter />

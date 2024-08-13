@@ -33,14 +33,13 @@ export function AppHeader() {
           </button>
         </div>
       </div>
-
       <div className="main-header-large-search flex justify-center">
         <div className="main-header-large-search-content flex">
           <div className="where-search">
             <h3>where</h3>
             <h4>search destinations</h4>
           </div>
-          <div className="check-in-out-search flex">
+          <div className="check-in-out-search">
             <div className="check-in">
               <h3>check in</h3>
               <h4>add dates</h4>
