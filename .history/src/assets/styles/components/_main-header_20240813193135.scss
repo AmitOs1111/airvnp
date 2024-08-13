@@ -1,0 +1,89 @@
+.app-header {
+  border-bottom: 1px solid $clr5;
+
+  .main-header {
+    .app-logo {
+      color: $clr3;
+      font-size: 38px;
+      margin-block: 5px;
+
+      font-family: Nunito-SemiBold;
+      .logo-brands {
+      }
+      .txt-brands {
+        margin-inline-start: 10px;
+      }
+    }
+
+    .main-header-small-search {
+      font-size: 14px;
+      width: 400px;
+      padding: 0px 24px;
+      border-radius: 2rem;
+      border: 1px solid $clr5;
+      padding-block: 7px;
+
+      > * {
+        padding: 0px 16px;
+      }
+      .border-end {
+        border-inline-end: 1px solid $clr5;
+      }
+
+      .fa-magnifying-glass {
+        color: $clr1;
+        background-color: $clr4;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    .container-user-header {
+      button {
+        // background-color: antiquewhite;
+        padding: 8px 8px 8px 14px;
+        font-size: 14px;
+      }
+      .hamburger-user {
+        border-radius: 2rem;
+        border: 1px solid $clr5;
+        i {
+          font-size: 24px;
+          margin-inline-start: 15px;
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .main-header-large-search {
+    .main-header-large-search-content {
+      // background-color: #fbbfbf;
+      border-radius: 3rem;
+      border: 1px solid $clr5;
+      padding: 5px 40px;
+
+      .where-search {
+        width: 284px;
+        text-align: start;
+      }
+
+      .check-in-out-search {
+        width: 280px;
+      }
+
+      .who-search {
+        width: 284px;
+      }
+
+      h3 {
+        font-size: 12px;
+      }
+      h4 {
+        font-size: 14px;
+        font-family: Nunito-ExtraLight;
+      }
+    }
+  }
+}

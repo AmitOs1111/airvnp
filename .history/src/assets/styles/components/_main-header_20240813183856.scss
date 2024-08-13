@@ -1,0 +1,23 @@
+.app-header {
+  // background-color: antiquewhite;
+  border-bottom: 1px solid $clr5;
+  .main-header {
+    .app-logo {
+      color: $clr3;
+      font-size: 38px;
+      margin-block: 5px;
+
+      font-family: Nunito-SemiBold;
+      .logo-brands {
+      }
+      .txt-brands {
+        margin-inline-start: 10px;
+      }
+    }
+
+    .main-header-small-search {
+      background-color: antiquewhite;
+      font-size: 14px;
+    }
+  }
+}

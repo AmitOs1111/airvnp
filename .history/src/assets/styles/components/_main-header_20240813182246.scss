@@ -1,0 +1,16 @@
+.app-header {
+  // background-color: antiquewhite;
+  border-bottom: 1px solid $clr5;
+  .main-header {
+    .app-logo {
+      color: $clr3;
+      background-color: antiquewhite;
+      .logo-brands {
+        font-weight: 625;
+        font-size: 40px;
+      }
+      .txt-brands {
+      }
+    }
+  }
+}

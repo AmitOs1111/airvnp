@@ -1,0 +1,25 @@
+// COLOR PALETTE
+$clr1: #fff;
+$clr2: #222222; //first color text
+$clr3: #ff385c; //logo
+$clr4: #f8385d; //search
+// $clr4: darken($clr3, 30%);
+$clr5: #eeeeee; //gray border
+$clr6: #6b6b6b; // second color text
+$clr7: darken($clr5, 30%);
+$clr8: #5d5d5d; // color filter icons
+$clr9: #f7f7f7; // bg footer
+
+// LAYOUT
+$layoutPadding: 80px;
+
+// LAYOUT BREAKPOINTS
+$break-mobile: 600px;
+$break-narrow: 800px;
+$break-normal: 1000px;
+$break-wide: 1500px;
+
+$padded-break-mobile: $break-mobile + $layoutPadding * 2;
+$padded-break-narrow: $break-narrow + $layoutPadding * 2;
+$padded-break-normal: $break-normal + $layoutPadding * 2;
+$padded-break-wide: $break-wide + $layoutPadding * 2;

@@ -1,0 +1,20 @@
+.app-header {
+  // background-color: antiquewhite;
+  border-bottom: 1px solid $clr5;
+  .main-header {
+    .app-logo {
+      color: $clr3;
+      font-size: 60px;
+      margin-block: 5px;
+      // padding: 8px 0px;
+      background-color: antiquewhite;
+      .logo-brands {
+        // font-weight: 625;
+      }
+      .txt-brands {
+        // font-size: 40px;
+        margin-inline-start: 10px;
+      }
+    }
+  }
+}
