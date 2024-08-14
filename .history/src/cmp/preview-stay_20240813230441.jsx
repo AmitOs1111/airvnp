@@ -1,9 +1,10 @@
 import { ImgCarousel } from '../cmp/img-carousel.jsx'
+
 export function PreviewStay({ stay }) {
   return (
     <section className="preview-stay">
       <div className="preview-img">
-        <ImgCarousel stay={stay} />
+        <ImgCarousel imgs={stay.imgUrls} />
         {/* <img src={stay.imgUrls[0]} alt="" /> */}
       </div>
       <div className="preview-content">

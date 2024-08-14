@@ -1,5 +1,4 @@
 import { HomePage } from './pages/home-page.jsx'
-import { Explore } from './pages/explore.jsx'
 // import { AboutUs } from './pages/about-us.jsx'
 // import { StayApp } from './pages/stay-app.jsx'
 // import { ReviewApp } from './pages/review-app.jsx'
@@ -8,6 +7,7 @@ import { Explore } from './pages/explore.jsx'
 // import { StayEdit } from './pages/stay-edit.jsx'
 // import { StayDetails } from './pages/stay-details.jsx'
 // import { UserDetails } from './pages/user-details.jsx'
+// import { Explore } from './pages/explore.jsx'
 // import { LogInApp } from './pages/login.jsx'
 // import { BecomeHost } from './pages/become-host.jsx'
 
@@ -54,11 +54,11 @@ const routes = [
     label: 'Home 🏠',
   },
 
-  {
-    path: 'explore/:label',
-    component: <Explore />,
-    label: 'Explore',
-  },
+  // {
+  //   path: '',
+  //   component: <StayApp />,
+  //   label: 'Stays',
+  // },
   // {
   //   path: 'review',
   //   component: <ReviewApp />,

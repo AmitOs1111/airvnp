@@ -4,10 +4,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
 import { dataIconsCarouselService } from '../services/icons-carousel.data'
-import { useNavigate } from 'react-router-dom'
 
 export function FilterCarousel() {
-  const navigate = useNavigate()
   var settings = {
     className: 'carousel',
     dots: false,
@@ -23,11 +21,10 @@ export function FilterCarousel() {
 
   function onExplore(label) {
     console.log('label:', label)
-    navigate(`explore/${label}`)
   }
 
   if (!icons) return
-
+  console.log(icons)
   return (
     <section className="filter-carousel flex align-center justify-center">
       <Slider {...settings}>

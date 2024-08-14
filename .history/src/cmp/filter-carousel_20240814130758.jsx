@@ -23,7 +23,7 @@ export function FilterCarousel() {
 
   function onExplore(label) {
     console.log('label:', label)
-    navigate(`explore/${label}`)
+    navigate('/')
   }
 
   if (!icons) return

@@ -1,5 +1,5 @@
 .filter-carousel {
-  margin-block: 10px;
+  margin-block: 30px;
   font-family: Nunito-ExtraLight;
   color: $clr10;
   .carousel {
@@ -8,7 +8,7 @@
     .icon-carousel {
       display: flex;
       flex-direction: column;
-      width: 34px;
+      width: 56px;
       margin: 10px;
       img {
         opacity: 0.7;
@@ -17,7 +17,6 @@
         height: 24px;
       }
       h3 {
-        font-size: 14px;
       }
     }
   }
@@ -28,6 +27,6 @@
     // border: 1px solid black;
     color: rgb(184, 183, 183);
     // border-radius: 50%;
-    font-size: 24px;
+    font-size: 50px;
   }
 }

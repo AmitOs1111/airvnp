@@ -1,10 +1,11 @@
 import { ImgCarousel } from '../cmp/img-carousel.jsx'
+
 export function PreviewStay({ stay }) {
   return (
     <section className="preview-stay">
       <div className="preview-img">
-        <ImgCarousel stay={stay} />
-        {/* <img src={stay.imgUrls[0]} alt="" /> */}
+        <ImgCarousel />
+        <img src={stay.imgUrls[0]} alt="" />
       </div>
       <div className="preview-content">
         <div className="preview-content-where-rate">

@@ -1,4 +1,5 @@
 import { ImgCarousel } from '../cmp/img-carousel.jsx'
+
 export function PreviewStay({ stay }) {
   return (
     <section className="preview-stay">
