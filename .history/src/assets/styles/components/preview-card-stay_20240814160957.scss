@@ -1,0 +1,19 @@
+.preview-card-stay {
+  background-color: antiquewhite;
+  .preview-img {
+    background-color: rgb(193, 242, 168);
+  }
+  .preview-content {
+    background-color: rgb(242, 191, 168);
+  }
+}
+
+.img-carousel {
+  .img-carousel-slider {
+    background-color: rgb(242, 168, 236);
+    height: 70%;
+    img {
+      object-fit: contain;
+    }
+  }
+}
