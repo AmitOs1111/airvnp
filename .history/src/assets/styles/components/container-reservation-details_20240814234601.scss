@@ -1,0 +1,12 @@
+.container-reservation-details {
+  .left {
+    background-color: antiquewhite;
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: end;
+  }
+}

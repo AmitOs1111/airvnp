@@ -1,0 +1,10 @@
+.amenities {
+  background-color: antiquewhite;
+  .amenities-grid {
+    background-color: aquamarine;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 2;
+    grid-template-rows: 10;
+  }
+}
