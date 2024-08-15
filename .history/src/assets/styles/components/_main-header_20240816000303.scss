@@ -1,0 +1,149 @@
+.app-header {
+  border-bottom: 1px solid $clr5;
+
+  .main-header {
+    .app-logo {
+      color: $clr3;
+      margin-block: 5px;
+
+      font-family: Poppins;
+      .logo-brands {
+        font-size: rem(38px);
+      }
+      .txt-brands {
+        font-size: rem(26px);
+        margin-inline-start: 10px;
+      }
+    }
+
+    .container-top-main-header {
+      width: 400px;
+      .main-header-small-search {
+        font-size: 14px;
+        width: 100%;
+        padding: 0px 24px;
+        border-radius: 2rem;
+        border: 1px solid $clr5;
+        padding-block: 7px;
+
+        > * {
+          padding: 0px 16px;
+        }
+        .border-end {
+          border-inline-end: 1px solid $clr5;
+        }
+
+        .fa-magnifying-glass {
+          color: $clr1;
+          background-color: $clr4;
+          border-radius: 50%;
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .main-header-top-large-search {
+        h3 {
+          font-size: 16px;
+          font-family: Nunito-ExtraLight;
+          &.active {
+            font-family: Nunito-SemiBold;
+          }
+        }
+      }
+    }
+
+    .container-user-header {
+      width: 276px;
+      button {
+        // background-color: antiquewhite;
+        padding: 8px 8px 8px 14px;
+        font-size: 14px;
+      }
+      .hamburger-user {
+        border-radius: 2rem;
+        box-shadow: $main-box-shadow;
+        .svg-hamburger {
+          width: 32px;
+          height: 32px;
+          margin-inline-end: 3px;
+          svg {
+            color: rgb(48, 48, 48);
+          }
+        }
+        .svg-user {
+          width: 32px;
+          height: 32px;
+
+          svg {
+            color: rgb(105, 105, 105);
+          }
+        }
+      }
+    }
+
+    .main-header-top-large-search {
+      // background-color: antiquewhite;
+      h3 {
+        margin-inline-end: 20px;
+      }
+    }
+  }
+
+  .main-header-large-search {
+    margin-block: 10px 20px;
+    .main-header-large-search-content {
+      height: 64px;
+      position: relative;
+      border-radius: 3rem;
+      box-shadow: $main-box-shadow;
+      padding: 5px 10px 5px 30px;
+
+      .where-search {
+        width: 284px;
+        text-align: start;
+      }
+
+      .check-in-out-search {
+        .check-in {
+          width: 50%;
+        }
+        .check-out {
+          width: 50%;
+        }
+      }
+
+      .check-in-out-search {
+        width: 280px;
+      }
+
+      .who-search {
+        width: 284px;
+        padding-inline-start: 20px;
+
+        .btn-search {
+          width: 48px;
+          height: 48px;
+          border-radius: 50%;
+          background-color: $clr4;
+          color: $clr1;
+        }
+      }
+
+      .btn-border {
+        border-inline-end: 1px solid $clr5;
+      }
+
+      h3 {
+        font-size: rem(12px);
+        font-weight: 700;
+        margin-block: auto;
+      }
+      h4 {
+        font-size: rem(14px);
+        font-family: Nunito-ExtraLight;
+        margin-block: auto;
+      }
+    }
+  }
+}

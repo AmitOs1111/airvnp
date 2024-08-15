@@ -1,0 +1,26 @@
+.header-search-modal {
+  //   background-color: rgb(237, 173, 173);
+  position: absolute;
+  bottom: calc(-100% - 600px);
+  padding: 30px;
+  box-shadow: $main-box-shadow;
+  border-radius: 1em;
+  background-color: $clr1;
+  z-index: 20;
+}
+
+.place-modal {
+  background-color: antiquewhite;
+  text-align: start;
+
+  .place-modal-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(2, 130px);
+    img {
+      border-radius: 1em;
+      border: 1px solid $clr10;
+    }
+  }
+}

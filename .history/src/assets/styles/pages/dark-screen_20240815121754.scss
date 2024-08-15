@@ -1,0 +1,10 @@
+.dark-screen {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: gray;
+  z-index: 10;
+  opacity: 0.7;
+}

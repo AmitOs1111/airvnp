@@ -1,0 +1,10 @@
+.header-search-modal {
+  //   background-color: rgb(237, 173, 173);
+  position: absolute;
+  bottom: 100%;
+  padding: 30px;
+  box-shadow: $main-box-shadow;
+  border-radius: 1em;
+  background-color: $clr1;
+  z-index: 20;
+}
