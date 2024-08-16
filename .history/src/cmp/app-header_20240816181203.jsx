@@ -207,8 +207,8 @@ export function AppHeader() {
         </div>
       )}
 
-      <div className="main-header-mobile hide flex align-center space-between">
-        <div className="header-mobile-btn-search  flex align-center ">
+      <div className="main-header-mobile flex align-center space-between">
+        <div className="header-mobile-btn-search hide flex align-center ">
           <div className="spotlight">
             <svg
               xmlns="http://www.w3.org/2000/svg"

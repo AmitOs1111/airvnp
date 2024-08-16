@@ -1,0 +1,15 @@
+.main-header-mobile {
+  background-color: antiquewhite;
+
+  .header-mobile-btn-search {
+    box-shadow: $main-box-shadow;
+    border-radius: 3em;
+  }
+
+  .header-mobile-btn-filter {
+    border: 1px solid $clr4;
+    border-radius: 50%;
+    padding: 7px;
+    justify-content: end;
+  }
+}

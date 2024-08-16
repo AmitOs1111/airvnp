@@ -149,17 +149,11 @@
 
   //---------MQ-------
   @mixin for-tablet-layout {
-    .main-header,
-    .main-header-large-search {
-      display: none;
-      background-color: rgb(0, 115, 255);
-    }
+    display: none;
+    background-color: rgb(0, 115, 255);
   }
   @mixin for-normal-layout {
-    .main-header,
-    .main-header-large-search {
-      display: block;
-      background-color: red;
-    }
+    display: block;
+    background-color: red;
   }
 }

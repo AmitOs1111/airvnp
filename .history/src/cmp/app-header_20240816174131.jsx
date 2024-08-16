@@ -207,8 +207,8 @@ export function AppHeader() {
         </div>
       )}
 
-      <div className="main-header-mobile hide flex align-center space-between">
-        <div className="header-mobile-btn-search  flex align-center ">
+      <div className="main-header-mobile flex align-center">
+        <div className="header-mobile-btn-search flex">
           <div className="spotlight">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -216,26 +216,12 @@ export function AppHeader() {
               aria-hidden="true"
               role="presentation"
               focusable="false"
-              style={{
-                display: 'block',
-                height: '20px',
-                width: '20px',
-                fill: 'currentcolor',
-              }}
+              style="display: block; height: 20px; width: 20px; fill: currentcolor;"
             >
               <path d="M13 0a13 13 0 0 1 10.5 20.67l7.91 7.92-2.82 2.82-7.92-7.91A12.94 12.94 0 0 1 13 26a13 13 0 1 1 0-26zm0 4a9 9 0 1 0 0 18 9 9 0 0 0 0-18z"></path>
             </svg>
           </div>
-          <div className="header-mobile-txt">
-            <h3>Where to?</h3>
-            <ul className="flex">
-              <li>Anywhere</li>
-              <li>Any week</li>
-              <li>Add guest</li>
-            </ul>
-          </div>
         </div>
-
         <div className="header-mobile-btn-filter">
           <svg
             xmlns="http://www.w3.org/2000/svg"
