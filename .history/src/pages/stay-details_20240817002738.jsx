@@ -96,10 +96,8 @@ export function StayDetails() {
       </div>
 
       <section className="reviews-details">
-        <ReviewsDetails stay={stay} />
+        <ReviewsDetails />
       </section>
-
-      <section className="map-location">map</section>
     </section>
   )
 }

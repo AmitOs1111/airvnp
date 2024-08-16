@@ -1,0 +1,14 @@
+.reviews-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 70%);
+  gap: 10px;
+  text-align: start;
+  .review-card {
+    li:nth-child(1) {
+      list-style: none;
+    }
+    // width: minmax(350px, 450px);
+    // background-color: antiquewhite;
+  }
+}

@@ -98,8 +98,6 @@ export function StayDetails() {
       <section className="reviews-details">
         <ReviewsDetails stay={stay} />
       </section>
-
-      <section className="map-location">map</section>
     </section>
   )
 }

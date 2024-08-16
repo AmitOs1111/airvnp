@@ -1,0 +1,8 @@
+.reviews-details {
+  display: flex;
+  flex-wrap: wrap;
+  .review-card {
+    width: minmax(350px, 450px);
+    background-color: antiquewhite;
+  }
+}

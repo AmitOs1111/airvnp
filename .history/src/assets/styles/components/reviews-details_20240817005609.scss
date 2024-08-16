@@ -1,0 +1,10 @@
+.reviews-details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 10px;
+  .review-card {
+    // width: minmax(350px, 450px);
+    background-color: antiquewhite;
+  }
+}
