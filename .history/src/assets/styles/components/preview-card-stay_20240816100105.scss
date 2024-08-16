@@ -1,0 +1,50 @@
+.preview-card-stay {
+  background-color: antiquewhite;
+  position: relative;
+
+  .preview-content {
+    background-color: rgb(242, 191, 168);
+    margin-block-start: 10px;
+    .hosted-by {
+      h3 {
+        color: $clr5;
+      }
+    }
+    h3 {
+      font-size: 15px;
+      text-align: start;
+    }
+  }
+
+  .preview-img {
+    .img-carousel {
+      .slick-prev,
+      .slick-next {
+        // font-size: 27px;
+        left: 90%;
+      }
+      .slick-dots li button:before {
+        font-size: 10px;
+        top: -35px;
+        color: white;
+      }
+      .img-carousel-slider article {
+        // background-color: rgb(242, 168, 236);
+
+        // @include aspect-ratio(280px, 280px);
+        img {
+          //   width: 100%;
+          height: 300px;
+          object-fit: cover;
+          border-radius: 1em;
+        }
+      }
+    }
+  }
+
+  .sent-like-stay-card {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
