@@ -11,28 +11,28 @@ export function GuestModal() {
   return (
     <section className="guest-modal">
       <ul className="clean-list">
-        <li>
+        <li className="flex space-between">
           <div>
             <h3>Adults</h3>
             <h4>Ages 13 or above</h4>
           </div>
           <SimpleCounter count={filterByGuest.adults} />
         </li>
-        <li>
+        <li className="flex space-between">
           <div>
             <h3>Children</h3>
             <h4>Ages 2 – 12</h4>
           </div>
           <SimpleCounter count={filterByGuest.children} />
         </li>
-        <li>
+        <li className="flex space-between">
           <div>
             <h3>Infants</h3>
             <h4>Under 2</h4>
           </div>
           <SimpleCounter count={filterByGuest.infants} />
         </li>
-        <li>
+        <li className="flex space-between">
           <div>
             <h3>Pets</h3>
             <h4>Bringing a service animal?</h4>
@@ -48,7 +48,7 @@ function SimpleCounter({ count = 0 }) {
   return (
     <section className="simple-counter flex align-center">
       <button>-</button>
-      <div className="count">{count}</div>
+      <div>{count}</div>
       <button>+</button>
     </section>
   )

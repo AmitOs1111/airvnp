@@ -12,6 +12,7 @@ export function DateModal() {
     startDate: new Date(),
     endDate: new Date(),
     key: 'selection',
+    months={2},
   })
 
   function handleSelect(ranges) {
@@ -23,14 +24,8 @@ export function DateModal() {
     })
   }
   return (
-    <section className="date-picker-modal">
-      <DateRangePicker
-        className="date-range-picker-modal"
-        months={2}
-        direction="horizontal"
-        ranges={[selectionRange]}
-        onChange={handleSelect}
-      />
+    <section className="date-picker-details">
+      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
     </section>
   )
 }

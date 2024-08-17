@@ -4,9 +4,7 @@ import { GuestModal } from '../cmp/guest-modal.jsx'
 
 export function SearchModal({ selectedSearch }) {
   return (
-    <section
-      className={`header-search-modal ${selectedSearch} flex align-center justify-center`}
-    >
+    <section className={`header-search-modal flex align-center justify-center`}>
       <DynamicCmp cmpType={selectedSearch} />
     </section>
   )

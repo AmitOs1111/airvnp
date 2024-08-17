@@ -1,0 +1,12 @@
+.header-search-modal {
+  background-color: antiquewhite;
+  .gest-modal {
+    text-align: start;
+    ul {
+      width: 330px;
+      li:nth-child(2) {
+        border-bottom: 1px solid $clr4;
+      }
+    }
+  }
+}

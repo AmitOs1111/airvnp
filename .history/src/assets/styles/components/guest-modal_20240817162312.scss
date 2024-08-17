@@ -1,0 +1,25 @@
+.header-search-modal.guest {
+  right: 0;
+  .guest-modal {
+    text-align: start;
+    ul {
+      width: 330px;
+      li:not(:last-child) {
+        border-bottom: 1px solid $clr5;
+      }
+      li {
+        font-size: rem(18px);
+        // background-color: antiquewhite;
+        padding-block: 24px;
+      }
+    }
+  }
+}
+
+.simple-counter {
+  button {
+    border-bottom: 1px solid $clr5;
+    border-radius: 50%;
+    padding: 5px;
+  }
+}

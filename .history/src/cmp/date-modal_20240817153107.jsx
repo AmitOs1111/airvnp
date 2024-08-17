@@ -23,14 +23,9 @@ export function DateModal() {
     })
   }
   return (
-    <section className="date-picker-modal">
-      <DateRangePicker
-        className="date-range-picker-modal"
-        months={2}
-        direction="horizontal"
-        ranges={[selectionRange]}
-        onChange={handleSelect}
-      />
+    <section className="date-picker-details">
+      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
     </section>
   )
 }

@@ -1,0 +1,13 @@
+.header-search-modal {
+  right: 0;
+  .guest-modal {
+    background-color: antiquewhite;
+    text-align: start;
+    ul {
+      width: 330px;
+      li:nth-child(2) {
+        border-bottom: 1px solid $clr4;
+      }
+    }
+  }
+}

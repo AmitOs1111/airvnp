@@ -1,0 +1,15 @@
+.header-search-modal.date {
+  left: 0%;
+  width: 100%;
+  .date-picker-modal {
+    .date-range-picker-modal {
+      background-color: antiquewhite;
+      .rdrDefinedRangesWrapper {
+        display: none;
+      }
+      .rdrDateDisplayWrapper {
+        display: none;
+      }
+    }
+  }
+}
