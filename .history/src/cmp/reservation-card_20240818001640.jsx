@@ -1,8 +1,6 @@
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 
-export function ReservationCard({ stay }) {
-  const navigate = useNavigate()
+export function ReservationCard() {
   const { filterBy } = useSelector((state) => state.stayModule)
   const { checkIn, checkOut } = filterBy.dateReservation
 
@@ -58,12 +56,7 @@ export function ReservationCard({ stay }) {
         </div>
       </div>
 
-      <div className="container-btn-reservation">
-        <button onClick={() => navigate(`/home/reserve/${stay._id}`)}>
-          Reserve
-        </button>
-        <h4>You won't be charged yet</h4>
-      </div>
+      <button>Reserve</button>
 
       <div className="reserve-footer flex space-between">
         <h3>Total</h3>

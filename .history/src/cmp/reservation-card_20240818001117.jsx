@@ -1,18 +1,11 @@
 import { useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
 
-export function ReservationCard({ stay }) {
-  const navigate = useNavigate()
+export function ReservationCard() {
   const { filterBy } = useSelector((state) => state.stayModule)
   const { checkIn, checkOut } = filterBy.dateReservation
 
-  function counterGuest() {
-    const valuesArray = Object.values(filterBy.guest)
-    return valuesArray.reduce((acc, currentValue) => {
-      return acc + currentValue
-    }, 0)
-  }
-
+  console.log('filterBy:', filterBy)
+  console.log('checkIn, checkOut:', checkIn, checkOut)
   return (
     <section className="reservation-card flex column space-between">
       <div className="reserve-header">
@@ -21,7 +14,7 @@ export function ReservationCard({ stay }) {
         </h3>
       </div>
       <div className="container-data-reservation">
-        <div className="data-reservation-check-in-out flex align-center space-between">
+        <div className="data-reservation-check-in-out flex">
           <div className="check-in">
             <h3>check-in</h3>
             <h4>
@@ -47,23 +40,9 @@ export function ReservationCard({ stay }) {
             </h4>
           </div>
         </div>
-        <div className="data-reservation-guest flex align-center space-between">
-          <div className="count-guest ">
-            <h3>guests</h3>
-            <h4>
-              <span>{counterGuest()}</span> guest
-            </h4>
-          </div>
-          <div>⌄</div>
-        </div>
       </div>
 
-      <div className="container-btn-reservation">
-        <button onClick={() => navigate(`/home/reserve/${stay._id}`)}>
-          Reserve
-        </button>
-        <h4>You won't be charged yet</h4>
-      </div>
+      <button>Reserve</button>
 
       <div className="reserve-footer flex space-between">
         <h3>Total</h3>

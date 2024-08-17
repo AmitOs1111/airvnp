@@ -13,7 +13,7 @@ import {
 export function loadStays(filterBY) {
   // store.dispatch({ type: SET_LOADING, isLoading: true })
   return stayService
-    .query(filterBY)
+    .getById(filterBY)
     .then((stays) => {
       // store.dispatch({ type: SET_LOADING, isLoading: false })
       store.dispatch({ type: SET_STAYS, stays })
@@ -32,7 +32,7 @@ export function loadStays(filterBY) {
 export function loadStayById(stayId) {
   // store.dispatch({ type: SET_LOADING, isLoading: true })
   return stayService
-    .getById(stayId)
+    .query(stayId)
     .then((stay) => {
       // store.dispatch({ type: SET_LOADING, isLoading: false })
       // store.dispatch({ type: SET_STAYS, stays })

@@ -4,7 +4,7 @@ export function PreviewStay({ stay }) {
   const navigate = useNavigate()
 
   function openDetails() {
-    navigate(`/home/stay/${stay._id}`)
+    navigate(`/stay/${stay._id}`)
   }
 
   return (
