@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 import { DarkScreen } from '../pages/dark-screen.jsx'
 import { SearchModal } from '../cmp/search-modal.jsx'
@@ -20,8 +20,6 @@ export function AppHeader() {
       pets: 0,
     },
   })
-
-  const navigate = useNavigate()
 
   let lastKnownScrollPosition = useRef(0)
   document.addEventListener('scroll', (event) => {
@@ -74,12 +72,7 @@ export function AppHeader() {
 
   function doSearchStay() {
     // console.log('doSearchStay', filterByEdit)
-    setFilterBy(filterByEdit).then(() => {
-      setIsOpenLargeSearch(false)
-      // const queryString = new URLSearchParams(filterByEdit).toString()
-      // console.log('queryString:', queryString)
-      navigate('/explore')
-    })
+    setFilterBy(filterByEdit)
   }
 
   return (

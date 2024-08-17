@@ -15,10 +15,10 @@ function query(entityType, filterBy = {}, delay = 600) {
     entities = dataService.getDataStays()
     _save(entityType, entities)
   }
-  // console.log('filterBy from service storage:', filterBy)
+  console.log('filterBy from service storage:', filterBy)
   if (filterBy.type) {
     const regExp = new RegExp(filterBy.type, 'i')
-    // console.log('regExp:', regExp)
+    console.log('regExp:', regExp)
     entities = entities.filter((stay) => {
       return stay.type.find((item) => regExp.test(item))
     })

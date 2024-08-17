@@ -76,8 +76,6 @@ export function AppHeader() {
     // console.log('doSearchStay', filterByEdit)
     setFilterBy(filterByEdit).then(() => {
       setIsOpenLargeSearch(false)
-      // const queryString = new URLSearchParams(filterByEdit).toString()
-      // console.log('queryString:', queryString)
       navigate('/explore')
     })
   }

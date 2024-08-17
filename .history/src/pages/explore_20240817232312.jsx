@@ -6,11 +6,9 @@ import { useParams } from 'react-router-dom'
 import { stayService } from '../services/stay.service.js'
 import { useSelector } from 'react-redux'
 
-import { loadStays } from '../store/stay.action.js'
-
 export function Explore() {
+  const [stays, setStays] = useState(null)
   const { type } = useParams()
-  const { stays } = useSelector((state) => state.stayModule)
   const { filterBy } = useSelector((state) => state.stayModule)
   const [filterByExplore, setFilterByExplore] = useState(filterBy)
 
@@ -18,23 +16,21 @@ export function Explore() {
     if (type) {
       setFilterByExplore((prevFilterBy) => ({ ...prevFilterBy, type }))
     }
-    // console.log('filterByExplore1:', filterByExplore)
-  }, [type])
+    console.log('filterByExplore:', filterByExplore)
+  }, [type, filterByExplore])
 
   useEffect(() => {
-    // console.log('filterByExplore2:', filterByExplore)
-    loadStays(filterByExplore)
-  }, [filterByExplore])
+    loadStays()
+  }, [filterBy])
 
-  // function loadStays() {
-  //   stayService.query(filterBy).then((stays) => {
-  //     console.log('stays:', stays)
-  //     setStays(stays)
-  //   })
-  // }
+  function loadStays() {
+    stayService.query(filterBy).then((stays) => {
+      console.log('stays:', stays)
+      setStays(stays)
+    })
+  }
 
   if (!stays) return <section>Loading...</section>
-  // console.log('stays:', stays)
   return (
     <section className="explore">
       <FilterCarousel />

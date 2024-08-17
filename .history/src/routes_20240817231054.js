@@ -55,12 +55,12 @@ const routes = [
   },
 
   {
-    path: 'home/explore',
+    path: 'home/explore/:type',
     component: <Explore />,
     label: 'Explore',
   },
   {
-    path: 'home/explore/:type',
+    path: 'home/explore',
     component: <Explore />,
     label: 'Explore',
   },

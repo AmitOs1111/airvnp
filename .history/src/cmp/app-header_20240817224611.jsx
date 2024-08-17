@@ -74,12 +74,7 @@ export function AppHeader() {
 
   function doSearchStay() {
     // console.log('doSearchStay', filterByEdit)
-    setFilterBy(filterByEdit).then(() => {
-      setIsOpenLargeSearch(false)
-      // const queryString = new URLSearchParams(filterByEdit).toString()
-      // console.log('queryString:', queryString)
-      navigate('/explore')
-    })
+    setFilterBy(filterByEdit).then(()=>console.log('done');)
   }
 
   return (

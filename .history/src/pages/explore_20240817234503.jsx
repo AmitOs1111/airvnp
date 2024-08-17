@@ -18,7 +18,7 @@ export function Explore() {
     if (type) {
       setFilterByExplore((prevFilterBy) => ({ ...prevFilterBy, type }))
     }
-    // console.log('filterByExplore1:', filterByExplore)
+    console.log('filterByExplore1:', filterByExplore)
   }, [type])
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export function Explore() {
   // }
 
   if (!stays) return <section>Loading...</section>
-  // console.log('stays:', stays)
+  console.log('stays:', stays)
   return (
     <section className="explore">
       <FilterCarousel />

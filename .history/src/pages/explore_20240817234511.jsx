@@ -34,7 +34,7 @@ export function Explore() {
   // }
 
   if (!stays) return <section>Loading...</section>
-  // console.log('stays:', stays)
+  console.log('stays:', stays)
   return (
     <section className="explore">
       <FilterCarousel />
