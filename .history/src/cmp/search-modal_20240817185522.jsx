@@ -3,7 +3,7 @@ import { DateModal } from '../cmp/date-modal.jsx'
 import { GuestModal } from '../cmp/guest-modal.jsx'
 import { useEffect, useState } from 'react'
 
-export function SearchModal({ selectedSearch, onSetFilterByEdit }) {
+export function SearchModal({ selectedSearch }) {
   return (
     <section
       className={`header-search-modal ${selectedSearch} flex align-center justify-center`}

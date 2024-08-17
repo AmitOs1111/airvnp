@@ -3,7 +3,6 @@ import { DateRangePicker } from 'react-date-range'
 
 import 'react-date-range/dist/styles.css' // main style file
 import 'react-date-range/dist/theme/default.css' // theme css file
-import { Value } from 'sass'
 
 // CSS Modules, react-datepicker-cssmodules.css
 // import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -21,7 +20,6 @@ export function DateModal({ onSetFilterByEdit }) {
       checkOut: selectionRange.endDate,
     }
     console.log('dateReservation', dateReservation)
-    onSetFilterByEdit({ type: 'dateReservation', value: dateReservation })
   }, [selectionRange])
 
   function handleSelect(ranges) {

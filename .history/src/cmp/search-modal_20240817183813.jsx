@@ -1,9 +1,30 @@
 import { PlaceModal } from '../cmp/place-modal.jsx'
 import { DateModal } from '../cmp/date-modal.jsx'
 import { GuestModal } from '../cmp/guest-modal.jsx'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
-export function SearchModal({ selectedSearch, onSetFilterByEdit }) {
+export function SearchModal({ selectedSearch }) {
+  const [filterByEdit, setFilterByEdit] = useState({
+    place: '',
+    checkIn: '',
+    checkOut: '',
+    guest: {
+      adults: 0,
+      children: 0,
+      infants: 0,
+      pets: 0,
+    },
+  })
+
+  function onSetFilterByEdit(val) {
+    console.log('val:', val)
+
+    setFilterByEdit((prevFilterByEdit) => ({
+      ...prevFilterByEdit,
+      [val.type]: type.value,
+    }))
+  }
+
   return (
     <section
       className={`header-search-modal ${selectedSearch} flex align-center justify-center`}

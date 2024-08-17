@@ -68,10 +68,6 @@ export function AppHeader() {
     }, 0)
   }
 
-  function doSearchStay() {
-    console.log('doSearchStay', filterByEdit)
-  }
-
   return (
     <section className="app-header full main-layout flex column ">
       <div className="main-header flex space-between align-center">
@@ -230,11 +226,7 @@ export function AppHeader() {
                 <h3>who</h3>
                 <h4>{counterGuest() ? counterGuest() : 'add guests'}</h4>
               </div>
-
-              <button
-                onClick={() => doSearchStay()}
-                className="btn-search flex align-center justify-center"
-              >
+              <button className="btn-search flex align-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"

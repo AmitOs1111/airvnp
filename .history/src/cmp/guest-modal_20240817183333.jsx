@@ -10,8 +10,6 @@ export function GuestModal({ onSetFilterByEdit }) {
 
   useEffect(() => {
     console.log('onSetFilterByEdit')
-
-    onSetFilterByEdit({ type: 'guest', value: filterByGuest })
   }, [filterByGuest])
 
   function onSetFilterByGuest(guest) {

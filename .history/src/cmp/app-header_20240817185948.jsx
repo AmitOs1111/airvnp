@@ -61,17 +61,6 @@ export function AppHeader() {
     }))
   }
 
-  function counterGuest() {
-    const valuesArray = Object.values(filterByEdit.guest)
-    return valuesArray.reduce((acc, currentValue) => {
-      return acc + currentValue
-    }, 0)
-  }
-
-  function doSearchStay() {
-    console.log('doSearchStay', filterByEdit)
-  }
-
   return (
     <section className="app-header full main-layout flex column ">
       <div className="main-header flex space-between align-center">
@@ -201,24 +190,11 @@ export function AppHeader() {
             >
               <div className="check-in  btn-border">
                 <h3>check in</h3>
-                <h4>
-                  {' '}
-                  {filterByEdit.dateReservation
-                    ? filterByEdit.dateReservation.checkIn.getDate() +
-                      ',' +
-                      filterByEdit.dateReservation.checkIn.getMonth()
-                    : 'add dates'}
-                </h4>
+                <h4>add dates</h4>
               </div>
               <div className="check-out btn-border">
                 <h3>check out</h3>
-                <h4>
-                  {filterByEdit.dateReservation
-                    ? filterByEdit.dateReservation.checkOut.getDate() +
-                      ',' +
-                      filterByEdit.dateReservation.checkOut.getMonth()
-                    : 'add dates'}
-                </h4>
+                <h4>add dates</h4>
               </div>
             </div>
 
@@ -228,13 +204,9 @@ export function AppHeader() {
             >
               <div className="who-search-content">
                 <h3>who</h3>
-                <h4>{counterGuest() ? counterGuest() : 'add guests'}</h4>
+                <h4>add guests</h4>
               </div>
-
-              <button
-                onClick={() => doSearchStay()}
-                className="btn-search flex align-center justify-center"
-              >
+              <button className="btn-search flex align-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"

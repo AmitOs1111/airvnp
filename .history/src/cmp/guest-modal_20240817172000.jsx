@@ -10,23 +10,10 @@ export function GuestModal({ onSetFilterByEdit }) {
 
   useEffect(() => {
     console.log('onSetFilterByEdit')
-
-    onSetFilterByEdit({ type: 'guest', value: filterByGuest })
   }, [filterByGuest])
 
   function onSetFilterByGuest(guest) {
-    // console.log('guest:', guest)
-    const field = guest.type
-    let value = filterByGuest[field]
-
-    if (value === 0 && guest.val < 0) return
-
-    value += guest.val
-
-    setFilterByGuest((prevFilterByGuest) => ({
-      ...prevFilterByGuest,
-      [field]: value,
-    }))
+    console.log('guest:', guest)
   }
 
   return (

@@ -10,24 +10,9 @@ export function GuestModal({ onSetFilterByEdit }) {
 
   useEffect(() => {
     console.log('onSetFilterByEdit')
-
-    onSetFilterByEdit({ type: 'guest', value: filterByGuest })
   }, [filterByGuest])
 
-  function onSetFilterByGuest(guest) {
-    // console.log('guest:', guest)
-    const field = guest.type
-    let value = filterByGuest[field]
-
-    if (value === 0 && guest.val < 0) return
-
-    value += guest.val
-
-    setFilterByGuest((prevFilterByGuest) => ({
-      ...prevFilterByGuest,
-      [field]: value,
-    }))
-  }
+  function onSetFilterByGuest(val) {}
 
   return (
     <section className="guest-modal">
@@ -84,9 +69,9 @@ export function GuestModal({ onSetFilterByEdit }) {
 function SimpleCounter({ count = 0, onSetFilterByGuest, type }) {
   return (
     <section className="simple-counter flex align-center">
-      <button onClick={() => onSetFilterByGuest({ type, val: -1 })}>-</button>
+      <button>-</button>
       <div className="count">{count}</div>
-      <button onClick={() => onSetFilterByGuest({ type, val: 1 })}>+</button>
+      <button>+</button>
     </section>
   )
 }

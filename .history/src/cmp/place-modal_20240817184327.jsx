@@ -17,7 +17,9 @@ export function PlaceModal({ onSetFilterByEdit }) {
             <article
               key={name}
               className="flex column"
-              onClick={() => onSetFilterByEdit({ type: 'place', value: name })}
+              onClick={() =>
+                onSetFilterByEdit({ type: 'place', value: { name } })
+              }
             >
               <img
                 src={require(`../assets/img/img-map-filter/${name}.gif`)}

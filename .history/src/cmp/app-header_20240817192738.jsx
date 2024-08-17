@@ -69,7 +69,7 @@ export function AppHeader() {
   }
 
   function doSearchStay() {
-    console.log('doSearchStay', filterByEdit)
+    console.log('doSearchStay')
   }
 
   return (

@@ -62,14 +62,9 @@ export function AppHeader() {
   }
 
   function counterGuest() {
-    const valuesArray = Object.values(filterByEdit.guest)
-    return valuesArray.reduce((acc, currentValue) => {
+    return filterByEdit.guest.reduce((acc, currentValue) => {
       return acc + currentValue
     }, 0)
-  }
-
-  function doSearchStay() {
-    console.log('doSearchStay', filterByEdit)
   }
 
   return (
@@ -228,13 +223,9 @@ export function AppHeader() {
             >
               <div className="who-search-content">
                 <h3>who</h3>
-                <h4>{counterGuest() ? counterGuest() : 'add guests'}</h4>
+                <h4>{counterGuest ? counterGuest : 'add guests'}add guests</h4>
               </div>
-
-              <button
-                onClick={() => doSearchStay()}
-                className="btn-search flex align-center justify-center"
-              >
+              <button className="btn-search flex align-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
