@@ -2,8 +2,7 @@
   background-color: $clr9;
   padding: 50px;
 
-  section,
-  .categoric {
+  section {
     border-bottom: 1px solid $clr5;
   }
 }
@@ -11,13 +10,6 @@
 @include for-mobile-layout {
   .categoric-footer {
     flex-direction: column;
-    text-align: start;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }
 
@@ -25,11 +17,5 @@
   .categoric-footer {
     flex-direction: row;
     justify-content: space-around;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }

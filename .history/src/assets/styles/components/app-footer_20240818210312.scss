@@ -1,0 +1,14 @@
+.app-footer {
+  background-color: $clr9;
+  padding: 50px;
+}
+
+@include for-mobile-layout {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+@include for-tablet-layout {
+  .categoric-footer {
+    justify-content: space-around;
+  }
+}

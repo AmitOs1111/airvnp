@@ -53,14 +53,14 @@ export function FilterCarousel() {
         settings: {
           className: 'carousel',
           dots: false,
-          slidesToShow: 4,
+          slidesToShow: 6,
           slidesToScroll: 2,
           infinite: true,
           speed: 100,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 550,
         settings: {
           className: 'carousel',
           dots: false,

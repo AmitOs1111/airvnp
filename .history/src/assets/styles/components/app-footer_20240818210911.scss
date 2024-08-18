@@ -16,7 +16,7 @@
   .copyright-footer {
     ul {
       flex-direction: column;
-      text-align: start;
+      // text-align: start;
     }
   }
 }
@@ -25,11 +25,5 @@
   .categoric-footer {
     flex-direction: row;
     justify-content: space-around;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }

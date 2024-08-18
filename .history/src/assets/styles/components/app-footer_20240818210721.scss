@@ -13,23 +13,11 @@
     flex-direction: column;
     text-align: start;
   }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
-  }
 }
 
 @include for-tablet-layout {
   .categoric-footer {
     flex-direction: row;
     justify-content: space-around;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }

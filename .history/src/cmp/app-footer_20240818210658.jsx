@@ -44,7 +44,7 @@ export function AppFooter() {
         </div>
       </section>
 
-      <section className="copyright-footer flex space-around">
+      <section className="copyright-footer flex space-between">
         <ul className="flex">
           <li>© 2023 Airbnb, Inc.</li>
           <li>Privacy</li>

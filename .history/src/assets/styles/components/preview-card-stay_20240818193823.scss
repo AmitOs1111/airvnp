@@ -39,16 +39,19 @@
         top: -35px;
         color: white;
       }
-      .slick-slide {
-        article {
-          @include aspect-ratio(6, 5); // Maintains a 16:9 aspect ratio
-          overflow: hidden;
+      .img-carousel-slider article {
+        @include aspect-ratio(300, 250); // Maintains a 16:9 aspect ratio
+        overflow: hidden;
 
-          img {
-            border-radius: 1em;
-            object-fit: cover; // Ensures the image covers the container
-          }
+        img {
+          object-fit: cover; // Ensures the image covers the container
         }
+        // img {
+        //   // height: 200px;
+        //   // object-fit: cover;
+        //   // border-radius: 1em;
+        //   @include aspect-ratio($width: 400, $height: 350);
+        // }
       }
     }
   }

@@ -39,15 +39,13 @@
         top: -35px;
         color: white;
       }
-      .slick-slide {
-        article {
-          @include aspect-ratio(6, 5); // Maintains a 16:9 aspect ratio
-          overflow: hidden;
+      article {
+        @include aspect-ratio(200, 150); // Maintains a 16:9 aspect ratio
+        overflow: hidden;
 
-          img {
-            border-radius: 1em;
-            object-fit: cover; // Ensures the image covers the container
-          }
+        img {
+          border-radius: 1em;
+          object-fit: cover; // Ensures the image covers the container
         }
       }
     }

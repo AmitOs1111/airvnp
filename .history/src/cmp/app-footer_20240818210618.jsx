@@ -26,7 +26,7 @@ export function AppFooter() {
   ]
   return (
     <footer className="app-footer full main-layout">
-      <section className="categoric-footer flex ">
+      <section className="categoric-footer flex space-around">
         <div className="categoric">
           {a.map((item) => (
             <article key={item}>{item}</article>
@@ -44,7 +44,7 @@ export function AppFooter() {
         </div>
       </section>
 
-      <section className="copyright-footer flex space-around">
+      <section className="copyright-footer flex space-between">
         <ul className="flex">
           <li>© 2023 Airbnb, Inc.</li>
           <li>Privacy</li>

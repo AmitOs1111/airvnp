@@ -4,12 +4,14 @@
   // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
   @include for-mobile-layout {
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: 1;
+    gap: 40px;
+    // grid-template-columns: repeat(auto-fit, minmax(1fr, 477px));
   }
 
-  @include for-tablet-layout {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  }
+  // @include for-tablet-layout {
+  //   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  // }
 
   @include for-narrow-layout {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

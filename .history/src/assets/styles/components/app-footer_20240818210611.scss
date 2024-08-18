@@ -11,13 +11,6 @@
 @include for-mobile-layout {
   .categoric-footer {
     flex-direction: column;
-    text-align: start;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }
 
@@ -25,11 +18,5 @@
   .categoric-footer {
     flex-direction: row;
     justify-content: space-around;
-  }
-  .copyright-footer {
-    ul {
-      flex-direction: column;
-      text-align: start;
-    }
   }
 }

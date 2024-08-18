@@ -1,0 +1,17 @@
+.app-footer {
+  background-color: $clr9;
+  padding: 50px;
+}
+
+@include for-mobile-layout {
+  .categoric-footer {
+    flex-direction: column;
+  }
+}
+
+@include for-tablet-layout {
+  .categoric-footer {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
