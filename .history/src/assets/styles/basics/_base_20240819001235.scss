@@ -135,6 +135,8 @@ button {
 }
 
 img.img-user {
+  display: flex;
+  align-items: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;

@@ -62,10 +62,9 @@ export function StayDetails() {
               <li>{stay.reviews.length} reviews</li>
             </ul>
           </section>
-          <section className="flex align-center">
+          <section className="flex">
             <div>
               <img
-                className="img-user"
                 src={require('../assets/img/img-user/user1.png')}
                 alt="host"
               />

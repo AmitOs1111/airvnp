@@ -1,0 +1,13 @@
+.general-info {
+  background-color: antiquewhite;
+  text-align: start;
+  ul {
+    li {
+      display: flex;
+      align-items: center;
+      .info-txt {
+        line-height: 0;
+      }
+    }
+  }
+}
