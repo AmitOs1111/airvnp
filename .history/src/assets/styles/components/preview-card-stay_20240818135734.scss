@@ -1,0 +1,57 @@
+.preview-card-stay {
+  // background-color: antiquewhite;
+  position: relative;
+  // line-height: 0;
+
+  .preview-content {
+    // background-color: rgb(242, 191, 168);
+    margin-block-start: 10px;
+    line-height: 0.3;
+    align-items: center;
+    .hosted-by {
+      h3 {
+        color: $clr6;
+      }
+    }
+    h3 {
+      font-size: 15px;
+      text-align: start;
+      line-height: 0.3;
+    }
+  }
+
+  .preview-img {
+    .img-carousel {
+      .slick-prev,
+      .slick-next {
+        left: 90%;
+        opacity: 1;
+        transition: opacity 0.7s;
+      }
+
+      .slick-prev,
+      .slick-next::before {
+        font-size: 30px;
+      }
+
+      .slick-dots li button:before {
+        font-size: 8px;
+        top: -35px;
+        color: white;
+      }
+      .img-carousel-slider article {
+        img {
+          height: 300px;
+          object-fit: cover;
+          border-radius: 1em;
+        }
+      }
+    }
+  }
+
+  .sent-like-stay-card {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
