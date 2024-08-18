@@ -1,0 +1,18 @@
+.mini-info-stay {
+  background-color: antiquewhite;
+  text-align: start;
+  margin-block: 40px;
+
+  h3 {
+    font-size: 22px;
+  }
+  ul {
+    padding-inline-start: 0;
+    li:nth-child(1) {
+      list-style: none;
+    }
+    li {
+      margin-inline-end: 30px;
+    }
+  }
+}

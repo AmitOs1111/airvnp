@@ -44,7 +44,7 @@ export function StayDetails() {
 
       <div className="container-reservation-details flex">
         <div className="left">
-          <section className="mini-info-stay">
+          <section>
             <h3>
               <span>{stay.name}</span> in <span>{stay.loc.city}</span>,
               <span>{stay.loc.country}</span>
@@ -62,7 +62,6 @@ export function StayDetails() {
               <li>{stay.reviews.length} reviews</li>
             </ul>
           </section>
-
           <section className="mini-info-host flex align-center">
             <div>
               <img
