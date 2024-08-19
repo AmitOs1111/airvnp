@@ -1,0 +1,28 @@
+.full-gallery {
+  //   background-color: antiquewhite;
+  margin-block: 40px;
+  .ull-gallery-header {
+    h1 {
+      font-family: Popines;
+    }
+  }
+
+  .container-gallery {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, minmax(150px, 50%));
+
+    article {
+      @include aspect-ratio(3, 4);
+      overflow: hidden;
+
+      img {
+        object-fit: cover; // Ensures the image covers the container
+      }
+
+      &:nth-child(3n + 1) {
+        grid-column: 1/-1;
+      }
+    }
+  }
+}

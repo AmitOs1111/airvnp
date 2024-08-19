@@ -1,0 +1,11 @@
+.full-gallery {
+  background-color: antiquewhite;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 50%);
+
+  article {
+    background-color: aqua;
+    padding: 10px;
+  }
+}

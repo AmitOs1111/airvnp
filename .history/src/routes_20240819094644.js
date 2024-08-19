@@ -72,7 +72,7 @@ const routes = [
     label: 'Explore',
   },
   {
-    path: 'gallery/:id',
+    path: 'gallery',
     component: <FullGallery />,
     label: 'FullGallery',
   },

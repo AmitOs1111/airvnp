@@ -9,20 +9,25 @@ import { GeneralInfo } from '../cmp/general-info.jsx'
 import { AboutStay } from '../cmp/about-stay.jsx'
 import { DatePickerDetails } from '../cmp/date-picker-details.jsx'
 import { ReviewsDetails } from '../cmp/reviews-details.jsx'
-import { loadStayById } from '../store/stay.action.js'
 
 export function StayDetails() {
   const [stays, setStays] = useState(dataService.getDataStays())
   const [stay, setStay] = useState(null)
   const params = useParams()
   const navigate = useNavigate()
-
   useEffect(() => {
     console.log('params:', params)
-    loadStayById(params.id).then((stay) => setStay(stay))
+    loadStay()
   }, [])
 
-  if (!stay) return <section>Loading...</section>
+  function loadStay() {
+    const currStay = stays.find((stay) => stay._id === params.id)
+
+    if (currStay) setStay(currStay)
+  }
+
+  if (!stay) return
+
   return (
     <section className="stay-details main-layout-details">
       <div className="details-header flex space-between align-center">

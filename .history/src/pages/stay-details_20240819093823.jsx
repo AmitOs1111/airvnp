@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useNavigate, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { dataService } from '../services/demo.data'
 
 import { GalleryDetails } from '../cmp/gallery-details.jsx'
@@ -9,20 +9,25 @@ import { GeneralInfo } from '../cmp/general-info.jsx'
 import { AboutStay } from '../cmp/about-stay.jsx'
 import { DatePickerDetails } from '../cmp/date-picker-details.jsx'
 import { ReviewsDetails } from '../cmp/reviews-details.jsx'
-import { loadStayById } from '../store/stay.action.js'
 
 export function StayDetails() {
   const [stays, setStays] = useState(dataService.getDataStays())
   const [stay, setStay] = useState(null)
   const params = useParams()
-  const navigate = useNavigate()
 
   useEffect(() => {
     console.log('params:', params)
-    loadStayById(params.id).then((stay) => setStay(stay))
+    loadStay()
   }, [])
 
-  if (!stay) return <section>Loading...</section>
+  function loadStay() {
+    const currStay = stays.find((stay) => stay._id === params.id)
+
+    if (currStay) setStay(currStay)
+  }
+
+  if (!stay) return
+
   return (
     <section className="stay-details main-layout-details">
       <div className="details-header flex space-between align-center">
@@ -35,11 +40,8 @@ export function StayDetails() {
 
       <section className="container-gallery-details">
         <GalleryDetails stay={stay} />
-        <div
-          className="btn-show-all-imgs flex align-center"
-          onClick={() => navigate(`/gallery/${stay._id}`)}
-        >
-          <div className="svg-grid ">
+        <div className="btn-show-all-imgs flex align-center">
+          <div className="svg-grid flex align-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
@@ -59,7 +61,7 @@ export function StayDetails() {
               ></path>
             </svg>
           </div>
-          <div>
+          <div className="flex align-center">
             <h3>Show all photos</h3>
           </div>
         </div>

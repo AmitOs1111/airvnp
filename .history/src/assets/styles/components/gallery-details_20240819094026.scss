@@ -44,18 +44,17 @@
   }
 
   .btn-show-all-imgs {
-    background-color: $clr1;
+    background-color: antiquewhite;
     border: 1px solid $clr2;
-    border-radius: 0.5em;
-    padding: 8px 20px;
-    cursor: pointer;
+    border-radius: 1em;
+    padding: 5px 20px;
+    height: 40px;
     position: absolute;
-    bottom: 20px;
-    right: 20px;
+    bottom: 0;
+    right: 0;
 
     h3 {
       font-size: 16px;
-      margin: 0;
       margin-inline-start: 15px;
     }
   }

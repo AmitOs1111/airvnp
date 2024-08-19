@@ -1,0 +1,12 @@
+.full-gallery {
+  background-color: antiquewhite;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 50%);
+
+  article {
+    &:nth-child(3n + 1) {
+      grid-column: 1/-1;
+    }
+  }
+}

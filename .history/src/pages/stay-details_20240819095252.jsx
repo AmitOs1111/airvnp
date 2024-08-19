@@ -20,9 +20,17 @@ export function StayDetails() {
   useEffect(() => {
     console.log('params:', params)
     loadStayById(params.id).then((stay) => setStay(stay))
+    // loadStay()
   }, [])
 
-  if (!stay) return <section>Loading...</section>
+  // function loadStay() {
+  //   const currStay = stays.find((stay) => stay._id === params.id)
+
+  //   if (currStay) setStay(currStay)
+  // }
+
+  if (!stay) return
+
   return (
     <section className="stay-details main-layout-details">
       <div className="details-header flex space-between align-center">
