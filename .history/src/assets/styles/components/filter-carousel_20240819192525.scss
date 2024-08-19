@@ -24,7 +24,10 @@
 
   .slick-prev:before,
   .slick-next:before {
+    background: none;
+    // border: 1px solid black;
     color: rgb(184, 183, 183);
+    // border-radius: 50%;
     font-size: 24px;
   }
 }

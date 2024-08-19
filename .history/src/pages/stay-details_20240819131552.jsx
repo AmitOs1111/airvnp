@@ -23,10 +23,6 @@ export function StayDetails() {
     loadStayById(params.id).then((stay) => setStay(stay))
   }, [])
 
-  function onSetFilterByEdit() {
-    console.log('onSetFilterByEdit :')
-  }
-
   if (!stay) return <section>Loading...</section>
   return (
     <section className="main-stay-details main-layout-details">

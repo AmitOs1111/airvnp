@@ -41,8 +41,8 @@ export function AppHeader() {
     hoverEffect.style.setProperty('--mouse-y', `${y}px`)
 
     // Adjust the position of the background effect
-    hoverEffect.style.setProperty('top', `${y}px`)
-    hoverEffect.style.setProperty('left', `${x}px`)
+    hoverEffect.setProperty('top', `${y}px`)
+    hoverEffect.setProperty('left', `${x}px`)
     // button.querySelector('::before').style.top = `${y}px`
     // button.querySelector('::before').style.left = `${x}px`
 

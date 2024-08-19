@@ -4,8 +4,8 @@ export function ReviewsDetails({ stay }) {
   return (
     <section className="reviews-details">
       {stay.reviews.map((review, idx) => (
-        <article key={review.by._id} className="review-card ">
-          <div className="user-details flex align-center">
+        <article key={review.by._id} className="review-card">
+          <div className="user-details flex">
             <div>
               <img
                 className="img-user"

@@ -10,7 +10,6 @@ import { AboutStay } from '../cmp/about-stay.jsx'
 import { DatePickerDetails } from '../cmp/date-picker-details.jsx'
 import { ReviewsDetails } from '../cmp/reviews-details.jsx'
 import { loadStayById } from '../store/stay.action.js'
-import { DateModal } from '../cmp/date-modal.jsx'
 
 export function StayDetails() {
   const [stays, setStays] = useState(dataService.getDataStays())
@@ -22,10 +21,6 @@ export function StayDetails() {
     console.log('params:', params)
     loadStayById(params.id).then((stay) => setStay(stay))
   }, [])
-
-  function onSetFilterByEdit() {
-    console.log('onSetFilterByEdit :')
-  }
 
   if (!stay) return <section>Loading...</section>
   return (
@@ -122,7 +117,7 @@ export function StayDetails() {
           </section>
 
           <section className="date-picker">
-            <DateModal onSetFilterByEdit={onSetFilterByEdit} />
+            <DateModal />
             {/* <DatePickerDetails /> */}
           </section>
         </div>

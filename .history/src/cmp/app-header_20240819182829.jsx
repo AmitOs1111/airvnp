@@ -24,45 +24,35 @@ export function AppHeader() {
   const navigate = useNavigate()
 
   const btnRef = useRef(null)
-  const hoverEffectRef = useRef(null)
-
+  // console.log('btnRef:', btnRef)
   function handleMouseMove(e) {
     const button = btnRef.current
-    const hoverEffect = hoverEffectRef.current
-
-    if (!button || !hoverEffect) return // Check if both elements exist
-
+    console.log('button:', button)
     const rect = button.getBoundingClientRect()
+    console.log('rect:', rect)
     const x = e.clientX - rect.left
     const y = e.clientY - rect.top
 
     // Set the position of the pseudo-element
-    hoverEffect.style.setProperty('--mouse-x', `${x}px`)
-    hoverEffect.style.setProperty('--mouse-y', `${y}px`)
+    button.style.setProperty('--mouse-x', `${x}px`)
+    button.style.setProperty('--mouse-y', `${y}px`)
 
     // Adjust the position of the background effect
-    hoverEffect.style.setProperty('top', `${y}px`)
-    hoverEffect.style.setProperty('left', `${x}px`)
-    // button.querySelector('::before').style.top = `${y}px`
-    // button.querySelector('::before').style.left = `${x}px`
+    console.log('button.querySelector:', button.querySelector('::before'))
+    button.querySelector('::before').style.top = `${y}px`
+    button.querySelector('::before').style.left = `${x}px`
 
-    // Scale up the ::before pseudo-element
-    hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(1)')
     // Apply the transform to the pseudo-element
-    // button.querySelector('::before').style.transform =
-    //   'translate(-50%, -50%) scale(1)'
+    button.querySelector('::before').style.transform =
+      'translate(-50%, -50%) scale(1)'
   }
 
   function handleMouseLeave() {
     const button = btnRef.current
-    const hoverEffect = hoverEffectRef.current
 
-    if (!hoverEffect) return // Check if the hover effect element exists
     // Reset the transform on mouse leave
-    hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(0)')
-
-    // button.querySelector('::before').style.transform =
-    // 'translate(-50%, -50%) scale(0)'
+    button.querySelector('::before').style.transform =
+      'translate(-50%, -50%) scale(0)'
   }
 
   let lastKnownScrollPosition = useRef(0)
@@ -290,7 +280,6 @@ export function AppHeader() {
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
               >
-                <span ref={hoverEffectRef} className="hover-effect"></span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 32 32"
