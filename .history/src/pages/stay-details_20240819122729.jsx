@@ -26,9 +26,7 @@ export function StayDetails() {
   return (
     <section className="main-stay-details main-layout-details">
       <div className="details-header flex space-between align-center">
-        <div>
-          <h1>{stay.name}</h1>
-        </div>
+        <div>{stay.name}</div>
         <div className="flex">
           <h3>Share</h3>
           <h3>Save</h3>

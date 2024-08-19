@@ -1,6 +1,6 @@
 .amenities {
   margin-block: 20px;
-  text-align: start;
+
   h1 {
     font-size: 22px;
     text-align: start;
@@ -26,10 +26,6 @@
 
   button {
     border: 1px solid $clr2;
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 0.5em;
-
-    margin-block: 20px;
+    padding: 10px;
   }
 }

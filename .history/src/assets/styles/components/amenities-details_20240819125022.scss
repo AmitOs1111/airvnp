@@ -1,0 +1,14 @@
+.amenities {
+  //   background-color: antiquewhite;
+  .amenities-grid {
+    // background-color: aquamarine;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 50%);
+    text-align: start;
+
+    article {
+      display: flex;
+    }
+  }
+}

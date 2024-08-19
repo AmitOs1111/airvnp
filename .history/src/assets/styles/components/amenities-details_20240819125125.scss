@@ -1,12 +1,7 @@
 .amenities {
-  margin-block: 20px;
-  text-align: start;
-  h1 {
-    font-size: 22px;
-    text-align: start;
-  }
-
+  //   background-color: antiquewhite;
   .amenities-grid {
+    // background-color: aquamarine;
     display: grid;
     gap: 10px;
     grid-template-columns: repeat(2, 50%);
@@ -15,21 +10,11 @@
     article {
       display: flex;
       align-items: center;
-      margin-block: 10px;
       h3 {
         margin: 0;
         margin-inline-start: 20px;
         font-size: 16px;
       }
     }
-  }
-
-  button {
-    border: 1px solid $clr2;
-    padding: 15px;
-    font-size: 16px;
-    border-radius: 0.5em;
-
-    margin-block: 20px;
   }
 }
