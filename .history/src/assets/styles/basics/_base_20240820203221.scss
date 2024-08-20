@@ -146,6 +146,7 @@ img.img-user {
 button.airbnb-btn {
   padding: 10px 20px;
   font-size: 16px;
+  // background-color: #ff5a5f; /* Airbnb red */
   background: linear-gradient(
     90deg,
     rgba(223, 48, 90, 1) 0%,
@@ -153,17 +154,18 @@ button.airbnb-btn {
   );
   color: white;
   border: none;
-  border-radius: 0.8em;
+  border-radius: 8px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
   .hover-effect {
+    // content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 15em;
-    height: 15em;
+    width: 200%;
+    height: 200%;
     background: radial-gradient(
       circle,
       rgba(248, 56, 93, 0.4) 0%,

@@ -143,27 +143,24 @@ img.img-user {
   border: $main-border;
 }
 
-button.airbnb-btn {
+button.btn-special {
   padding: 10px 20px;
   font-size: 16px;
-  background: linear-gradient(
-    90deg,
-    rgba(223, 48, 90, 1) 0%,
-    rgba(210, 4, 98, 1) 100%
-  );
+  background-color: #ff5a5f; /* Airbnb red */
   color: white;
   border: none;
-  border-radius: 0.8em;
+  border-radius: 8px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
 
   .hover-effect {
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 15em;
-    height: 15em;
+    width: 4em;
+    height: 4em;
     background: radial-gradient(
       circle,
       rgba(248, 56, 93, 0.4) 0%,
@@ -174,5 +171,40 @@ button.airbnb-btn {
     transform: translate(-50%, -50%) scale(0);
     transition: transform 0.5s ease, top 0.3s ease, left 0.3s ease;
     pointer-events: none;
+  }
+}
+
+.airbnb-button {
+  position: relative;
+  background-color: #ff5a5f; /* Airbnb red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  overflow: hidden; /* Prevents the background from expanding outside the button */
+  z-index: 0;
+  border-radius: 4px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
+    border-radius: 50%;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    width: 150%;
+    height: 150%;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 }

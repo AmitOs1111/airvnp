@@ -1,6 +1,5 @@
 import { useSelector } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { AirbnbButton } from './airbnb-button'
 
 export function ReservationCard({ stay }) {
   const navigate = useNavigate()

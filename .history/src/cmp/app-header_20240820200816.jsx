@@ -3,7 +3,6 @@ import { NavLink, useNavigate } from 'react-router-dom'
 
 import { DarkScreen } from '../pages/dark-screen.jsx'
 import { SearchModal } from '../cmp/search-modal.jsx'
-import { AirbnbButton } from '../cmp/airbnb-button.jsx'
 
 import { setFilterBy } from '../store/stay.action.js'
 
@@ -24,39 +23,47 @@ export function AppHeader() {
 
   const navigate = useNavigate()
 
-  // const btnRef = useRef(null)
-  // const hoverEffectRef = useRef(null)
+  const btnRef = useRef(null)
+  const hoverEffectRef = useRef(null)
 
-  // function handleMouseMove(e) {
-  //   const button = btnRef.current
-  //   const hoverEffect = hoverEffectRef.current
+  function handleMouseMove(e) {
+    const button = btnRef.current
+    const hoverEffect = hoverEffectRef.current
 
-  //   if (!button || !hoverEffect) return // Check if both elements exist
+    if (!button || !hoverEffect) return // Check if both elements exist
 
-  //   const rect = button.getBoundingClientRect()
-  //   const x = e.clientX - rect.left
-  //   const y = e.clientY - rect.top
+    const rect = button.getBoundingClientRect()
+    const x = e.clientX - rect.left
+    const y = e.clientY - rect.top
 
-  //   // Set the position of the pseudo-element
-  //   hoverEffect.style.setProperty('--mouse-x', `${x}px`)
-  //   hoverEffect.style.setProperty('--mouse-y', `${y}px`)
+    // Set the position of the pseudo-element
+    hoverEffect.style.setProperty('--mouse-x', `${x}px`)
+    hoverEffect.style.setProperty('--mouse-y', `${y}px`)
 
-  //   // Adjust the position of the background effect
-  //   hoverEffect.style.setProperty('top', `${y}px`)
-  //   hoverEffect.style.setProperty('left', `${x}px`)
+    // Adjust the position of the background effect
+    hoverEffect.style.setProperty('top', `${y}px`)
+    hoverEffect.style.setProperty('left', `${x}px`)
+    // button.querySelector('::before').style.top = `${y}px`
+    // button.querySelector('::before').style.left = `${x}px`
 
-  //   // Scale up the ::before pseudo-element
-  //   hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(1)')
-  // }
+    // Scale up the ::before pseudo-element
+    hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(1)')
+    // Apply the transform to the pseudo-element
+    // button.querySelector('::before').style.transform =
+    //   'translate(-50%, -50%) scale(1)'
+  }
 
-  // function handleMouseLeave() {
-  //   const button = btnRef.current
-  //   const hoverEffect = hoverEffectRef.current
+  function handleMouseLeave() {
+    const button = btnRef.current
+    const hoverEffect = hoverEffectRef.current
 
-  //   if (!hoverEffect) return // Check if the hover effect element exists
-  //   // Reset the transform on mouse leave
-  //   hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(0)')
-  // }
+    if (!hoverEffect) return // Check if the hover effect element exists
+    // Reset the transform on mouse leave
+    hoverEffect.style.setProperty('transform', 'translate(-50%, -50%) scale(0)')
+
+    // button.querySelector('::before').style.transform =
+    // 'translate(-50%, -50%) scale(0)'
+  }
 
   let lastKnownScrollPosition = useRef(0)
   document.addEventListener('scroll', (event) => {
@@ -275,32 +282,37 @@ export function AppHeader() {
                 <h3>who</h3>
                 <h4>{counterGuest() ? counterGuest() : 'add guests'}</h4>
               </div>
-              <AirbnbButton
-                content={
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 32 32"
-                    aria-hidden="true"
-                    role="presentation"
-                    focusable="false"
-                    style={{
-                      display: 'block',
-                      fill: 'none',
-                      height: '16px',
-                      width: '16px',
-                      stroke: 'currentcolor',
-                      strokeWidth: '4',
-                      overflow: 'visible',
-                    }}
-                  >
-                    <path
-                      fill="none"
-                      d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"
-                    ></path>
-                  </svg>
-                }
-                func={doSearchStay}
-              />
+
+              <button
+                onClick={() => doSearchStay()}
+                className="btn-search btn-special flex align-center justify-center"
+                ref={btnRef}
+                onMouseMove={handleMouseMove}
+                onMouseLeave={handleMouseLeave}
+              >
+                <span ref={hoverEffectRef} className="hover-effect"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 32 32"
+                  aria-hidden="true"
+                  role="presentation"
+                  focusable="false"
+                  style={{
+                    display: 'block',
+                    fill: 'none',
+                    height: '16px',
+                    width: '16px',
+                    stroke: 'currentcolor',
+                    strokeWidth: '4',
+                    overflow: 'visible',
+                  }}
+                >
+                  <path
+                    fill="none"
+                    d="M13 24a11 11 0 1 0 0-22 11 11 0 0 0 0 22zm8-3 9 9"
+                  ></path>
+                </svg>
+              </button>
             </div>
             {selectedSearch && (
               <SearchModal
