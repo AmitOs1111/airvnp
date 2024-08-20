@@ -1,0 +1,39 @@
+.reservation-card {
+  padding: 20px;
+  box-shadow: $main-box-shadow;
+  border: $main-border;
+  border-radius: 1em;
+  width: 70%;
+  height: 495px;
+  position: sticky;
+  top: 100px;
+  text-align: start;
+  font-size: 14px;
+
+  .container-data-reservation {
+    // background-color: antiquewhite;
+    // padding: 10px;
+    border: 1px solid $clr2;
+    border-radius: 1em;
+    .data-reservation-check-in-out {
+      border-bottom: 1px solid $clr2;
+      width: 100%;
+      padding: 0%;
+      border-collapse: collapse;
+      // border-top: 1em;
+    }
+    .check-in {
+      border-inline-end: 1px solid $clr2;
+      width: 50%;
+    }
+    h3,
+    h4 {
+      margin: 0;
+    }
+  }
+
+  button {
+    width: 100%;
+    height: 48px;
+  }
+}
