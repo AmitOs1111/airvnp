@@ -1,0 +1,47 @@
+// SETUP
+@import 'setup/typography';
+@import 'setup/variables';
+@import 'setup/mixins';
+@import 'setup/functions';
+
+// BASICS
+@import 'basics/helpers';
+@import 'basics/base';
+@import 'basics/layout';
+
+// PAGES
+@import 'pages/dark-screen.scss';
+// @import 'pagess/home-page.scss';
+// @import 'pagess/book-index.scss';
+
+// COMPONENTs
+//----------general app---------
+@import 'components/main-header.scss';
+@import 'components/.main-header-large-search.scss';
+@import 'components/app-footer.scss';
+@import 'components/main-mobile-header.scss';
+@import 'components/header-search-modal.scss';
+@import 'components/place-modal.scss';
+@import 'components/date-picker-modal.scss';
+@import 'components/guest-modal.scss';
+
+//----------Home-page---------
+@import 'components/stay-list.scss';
+@import 'components/preview-card-stay.scss';
+@import 'components/filter-carousel.scss';
+
+//----------details-page---------
+@import 'components/main-stay-details.scss';
+@import 'components/gallery-details.scss';
+@import 'components/full-gallery.scss';
+@import 'components/container-reservation-details.scss';
+@import 'components/amenities-details.scss';
+@import 'components/reservation-card.scss';
+@import 'components/reviews-details.scss';
+@import 'components/general-info.scss';
+@import 'components/about-stay.scss';
+@import 'components/mini-info-host.scss';
+@import 'components/mini-info-stay.scss';
+
+// @import 'components/cards';
+// @import 'components/sidebar';
