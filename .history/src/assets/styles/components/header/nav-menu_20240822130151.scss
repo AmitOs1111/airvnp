@@ -1,0 +1,15 @@
+.nav-menu {
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 1em;
+  border: $main-border;
+  z-index: 20;
+  background-color: $clr1;
+  text-align: start;
+  li {
+    padding: 20px;
+    margin-block: 10px;
+  }
+}

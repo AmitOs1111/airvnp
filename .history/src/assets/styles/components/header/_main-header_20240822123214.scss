@@ -1,0 +1,227 @@
+.app-header {
+  border-bottom: $main-border;
+  //---------MQ-------
+  @include for-mobile-layout {
+    .main-header {
+      display: none;
+    }
+    // .main-header-large-search {
+    //   display: none;
+    // }
+  }
+
+  @include for-tablet-layout {
+    .main-header {
+      display: none;
+    }
+    // .main-header-large-search {
+    //   display: none;
+    // }
+  }
+
+  @include for-narrow-layout {
+    //----header-top----
+    .main-header {
+      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .app-logo {
+        color: $clr3;
+        margin-block: 5px;
+        font-family: Poppins;
+        font-weight: 800;
+        .logo-brands {
+          font-size: rem(38px);
+        }
+        .txt-brands {
+          display: none;
+        }
+      }
+
+      .container-top-main-header {
+        // width: 400px;
+        .main-header-small-search {
+          font-size: 14px;
+          width: 100%;
+          padding: 0px 24px;
+          border-radius: 2rem;
+          border: 1px solid $clr5;
+          padding-block: 7px;
+
+          > * {
+            padding: 0px 16px;
+          }
+          .border-end {
+            border-inline-end: 1px solid $clr5;
+          }
+
+          .fa-magnifying-glass {
+            color: $clr1;
+            background-color: $clr4;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+          }
+        }
+
+        .main-header-top-large-search {
+          h3 {
+            font-size: 16px;
+            font-family: Nunito-ExtraLight;
+            &.active {
+              font-family: Nunito-SemiBold;
+            }
+          }
+        }
+      }
+
+      .container-user-header {
+        width: 276px;
+        button {
+          // background-color: antiquewhite;
+          padding: 8px 8px 8px 14px;
+          font-size: 14px;
+        }
+        .hamburger-user {
+          border-radius: 2rem;
+          box-shadow: $main-box-shadow;
+          .svg-hamburger {
+            width: 32px;
+            height: 32px;
+            margin-inline-end: 3px;
+            svg {
+              color: rgb(48, 48, 48);
+            }
+          }
+          .svg-user {
+            width: 32px;
+            height: 32px;
+
+            svg {
+              color: rgb(105, 105, 105);
+            }
+          }
+        }
+      }
+
+      .main-header-top-large-search {
+        // background-color: antiquewhite;
+        h3 {
+          margin-inline-end: 20px;
+        }
+      }
+    }
+    //----header-bottom----
+    // .main-header-large-search {
+    //   display: block;
+    //   margin: auto;
+    //   margin-block: 10px 20px;
+
+    //   .main-header-large-search-content {
+    //     width: 700px;
+    //     height: 64px;
+    //     position: relative;
+    //     border-radius: 3rem;
+    //     box-shadow: $main-box-shadow;
+    //     border: $main-border;
+    //     // padding: 5px 10px 5px 30px;
+    //     text-align: start;
+
+    //     .where-search {
+    //       padding-inline-start: 30px;
+    //       width: 33%;
+    //       text-align: start;
+
+    //       &:hover {
+    //         height: 100%;
+    //         width: 33%;
+    //         border-radius: 3rem;
+    //         background-color: $clr5;
+    //       }
+    //     }
+
+    //     .check-in-out-search {
+    //       width: 33%;
+    //       height: 64px;
+    //       .check-in {
+    //         width: 50%;
+    //         padding-inline-start: 20px;
+    //         &:hover {
+    //           height: 100%;
+    //           width: 50%;
+    //           border-radius: 3rem;
+    //           background-color: $clr5;
+    //         }
+    //       }
+    //       .check-out {
+    //         width: 50%;
+    //         padding-inline-start: 20px;
+    //         &:hover {
+    //           height: 100%;
+    //           width: 50%;
+    //           border-radius: 3rem;
+    //           background-color: $clr5;
+    //         }
+    //       }
+    //     }
+
+    //     .who-search {
+    //       width: 33%;
+    //       padding-inline-start: 20px;
+    //       .airbnb-btn {
+    //         display: flex;
+    //         justify-content: center;
+    //         align-items: center;
+    //         width: 40px;
+    //         height: 40px;
+    //         border-radius: 50%;
+    //       }
+    //       &:hover {
+    //         height: 100%;
+    //         width: 34%;
+    //         border-radius: 3rem;
+    //         background-color: $clr5;
+    //       }
+    //     }
+
+    //     .btn-border {
+    //       border-inline-end: 1px solid $clr5;
+    //     }
+
+    //     h3 {
+    //       font-size: rem(12px);
+    //       font-weight: 700;
+    //       margin-block: auto;
+    //     }
+    //     h4 {
+    //       font-size: rem(14px);
+    //       font-family: Nunito-ExtraLight;
+    //       margin-block: auto;
+    //     }
+    //   }
+    // }
+  }
+
+  @include for-normal-layout {
+    //----header-top----
+    .main-header {
+      .app-logo {
+        .txt-brands {
+          display: block;
+          font-size: rem(26px);
+          margin-inline-start: 10px;
+        }
+      }
+    }
+    //----header-bottom----
+    // .main-header-large-search {
+    //   .main-header-large-search-content {
+    //     width: 850px;
+    //   }
+    // }
+  }
+
+  @include for-wide-layout {
+  }
+}
