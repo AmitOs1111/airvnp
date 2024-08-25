@@ -24,7 +24,7 @@ export function NavMenu({ openNavMenu }) {
   function doAirbnbHome() {
     if (!user) return
     openNavMenu()
-    navigate('/dashboard')
+    navigate('/home')
   }
 
   return (
